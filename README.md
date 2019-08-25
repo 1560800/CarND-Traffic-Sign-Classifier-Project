@@ -8,21 +8,33 @@ The goals / steps of this project are the following:
 * Analyze the softmax probabilities of the new images
 * Summarize the results with a written report
 
-## First of All  
+## First of All
 Please refer to this file for the file described in this document  
-jpynb: [(./Traffic_Sign_Classifier_190825-latest.ipynb)](./Traffic_Sign_Classifier_190825-latest.ipynb)  
-html: [(./Traffic_Sign_Classifier_190825-latest.html)](./Traffic_Sign_Classifier_190825-latest.html) 
+jpynb:[(./Traffic_Sign_Classifier_190825-latest.ipynb)](./Traffic_Sign_Classifier_190825-latest.ipynb) 
+html:[(./Traffic_Sign_Classifier_190825-latest.html)](./Traffic_Sign_Classifier_190825-latest.html) 
 
 ## Data Set Summary & Exploration
+Used Traffic sign images : [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset)
 * The size of training set : 34799
 * The size of the validation set : 4410
 * The size of test set : 12630
 * The shape of a traffic sign image : (32, 32, 3)
 * The number of unique classes/labels in the data set : 43
-<div style="text-align:center"><br/>
 <img src="./examples/histgram.png"><br/>
+<img src="./examples/examples.png"><br/>  
+#### Notes on data samples
+There is uneven data in the following
+1. Number of data samples (see histogram)
+2. Size, center position, angle, view angle
+3. Image brightness, saturation and contrast
 
-Used Traffic sign images : [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset)
+Measures  
+1.2. Create padding data (change original image and add)  
+  * Resize (zoom up & down)
+  * Center position shift
+  * rotation
+  * Perspective transform
+3. Regularization & gray scaling
 
 ## Project: Build a Traffic Sign Recognition Program
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
