@@ -21,7 +21,7 @@ Used Traffic sign images : [German Traffic Sign Dataset](http://benchmark.ini.ru
 * The shape of a traffic sign image : (32, 32, 3)
 * The number of unique classes/labels in the data set : 43
 <img src="./examples/histgram.png"><br/>
-<img src="./examples/examples.png"><br/>  
+  
 #### Notes on data samples
 There is uneven data in the following
 1. Number of data samples (see histogram)
