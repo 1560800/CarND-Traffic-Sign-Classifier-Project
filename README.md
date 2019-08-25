@@ -23,11 +23,11 @@ Used Traffic sign images : [German Traffic Sign Dataset](http://benchmark.ini.ru
 
 <img src="./examples/histgram.png"><br/>
 <img src="./examples/examples.png"><br/>
-.                       43 images randomly picked up from the dataset
+43 kinds of signs randomly picked up from the dataset
 #### Notes on data samples
 There is uneven data in the following
 1. Number of data samples (refer the histogram)
-2. Size, center position, angle, view angle
+2. Size, center position, angle(the sign rotates), view angle(view is not front)
 3. Image brightness, saturation and contrast
 
 # Design and Test a Model Architecture
@@ -68,4 +68,24 @@ I improved the base models and my final model consisted of the following layers:
 |Dense                       | 43       |
 |Activation  (Softmax)       | 43       |
 ## Model Training
+Hyperparameters are:
+
+| Name            | Value  | Description                                                 |
+|:---------------:|:------:|:-----------------------------------------------------------:|
+| `mu`            | 0      | For initilazing Weights with normal distribution            |
+| `sigma`         | 0.1    | For initilazing Weights with normal distribution            |
+| `learning_rate` | 0.001* | For training neural network (change to 0.0005 on try model) |
+| `BATCH_SIZE`    | 256    | Number of images feeding to the model at one time           |
+
+## Solution Approach
+1 Change parametor all filters in the convolutional layers and neurons in the dense layers
+<img src="./examples/conv_try.png"><br/>
+
+
+2 Change learning rate
+<img src="./examples/rate_try.png"><br/>
+
+
+3 Change epoch
+<img src="./examples/epoch_try.png"><br/>
 
