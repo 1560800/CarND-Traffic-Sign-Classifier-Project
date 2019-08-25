@@ -30,11 +30,11 @@ There is uneven data in the following
 
 Measures  
 1. Create padding data (add 2 below)
-2. Change the original image
-* Resizing
-* Center position shift
-* Rotation
-* perspective transform
+2. Change the original image  
+    *Resizing  
+    *Center position shift  
+    *Rotation  
+    *perspective transform  
 3. Regularization & gray scaling
 
 ## Project: Build a Traffic Sign Recognition Program
