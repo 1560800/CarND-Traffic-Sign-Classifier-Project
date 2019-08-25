@@ -19,9 +19,11 @@ Used Traffic sign images : [German Traffic Sign Dataset](http://benchmark.ini.ru
 * The size of the validation set : 4410
 * The size of test set : 12630
 * The shape of a traffic sign image : (32, 32, 3)
-* The number of unique classes/labels in the data set : 43
+* The number of unique classes/labels in the data set : 43  
+
 <img src="./examples/histgram.png"><br/>
-<img src="./examples/examples.png"><br/>  
+<img src="./examples/examples.png"><br/>
+.                       43 images randomly picked up from the dataset
 #### Notes on data samples
 There is uneven data in the following
 1. Number of data samples (refer the histogram)
