@@ -8,13 +8,21 @@ The goals / steps of this project are the following:
 * Analyze the softmax probabilities of the new images
 * Summarize the results with a written report
 
-## Data Set Summary & Exploration
+## First of All  
+Please refer to this file for the file described in this document  
+jpynb: [(./Traffic_Sign_Classifier_190825-latest.ipynb)](./Traffic_Sign_Classifier_190825-latest.ipynb)  
+html: [(./Traffic_Sign_Classifier_190825-latest.html)](./Traffic_Sign_Classifier_190825-latest.html) 
 
+## Data Set Summary & Exploration
 * The size of training set : 34799
 * The size of the validation set : 4410
 * The size of test set : 12630
 * The shape of a traffic sign image : (32, 32, 3)
 * The number of unique classes/labels in the data set : 43
+<div style="text-align:center"><br/>
+<img src="./examples/histgram.png"><br/>
+
+Used Traffic sign images : [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset)
 
 ## Project: Build a Traffic Sign Recognition Program
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
