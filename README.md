@@ -8,7 +8,7 @@ The goals / steps of this project are the following:
 * Analyze the softmax probabilities of the new images
 * Summarize the results with a written report
 
-## First of All
+### First of All
 Please refer to this file for the file described in this document  
 jpynb:[(./Traffic_Sign_Classifier_190825-latest.ipynb)](./Traffic_Sign_Classifier_190825-latest.ipynb) 
 html:[(./Traffic_Sign_Classifier_190825-latest.html)](./Traffic_Sign_Classifier_190825-latest.html) 
@@ -24,35 +24,49 @@ Used Traffic sign images : [German Traffic Sign Dataset](http://benchmark.ini.ru
 <img src="./examples/examples.png"><br/>  
 #### Notes on data samples
 There is uneven data in the following
-1. Number of data samples (see histogram)
+1. Number of data samples (refer the histogram)
 2. Size, center position, angle, view angle
 3. Image brightness, saturation and contrast
 
-Measures  
+#### Counter Measures  
+I took the following image processing measures.
 1. Create padding data (add 2 below)
 2. Change the original image  
     *Resizing  
     *Center position shift  
     *Rotation  
     *perspective transform  
-3. Regularization & gray scaling
+3. Gray scaling & Normalizing
 
-## Project: Build a Traffic Sign Recognition Program
-[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
+# Design and Test a Model Architecture
+## Preprocessing
 
-Overview
----
-In this project, you will use what you've learned about deep neural networks and convolutional neural networks to classify traffic signs. You will train and validate a model so it can classify traffic sign images using the [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset). After the model is trained, you will then try out your model on images of German traffic signs that you find on the web.
 
-We have included an Ipython notebook that contains further instructions 
-and starter code. Be sure to download the [Ipython notebook](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb). 
+## Model Architecture
+#### LeNet
+The model is based on [LeNet](http://yann.lecun.com/exdb/lenet/) by Yann LeCun.
+<div style="text-align:center"><br/>
+<img src="./examples/lenet.png"><br/> 
+Base model by Yann LeCun<br/><br/>
 
-We also want you to create a detailed writeup of the project. Check out the [writeup template](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/writeup_template.md) for this project and use it as a starting point for creating your own writeup. The writeup can be either a markdown file or a pdf document.
+I improved the base models and my final model consisted of the following layers:  
 
-To meet specifications, the project will require submitting three files: 
-* the Ipython notebook with the code
-* the code exported as an html file
-* a writeup report either as a markdown or pdf file 
+|Layer                       | Description |
+|----------------------------|:--------:|
+|Input                       | 32x32x1  |
+|Convolution (valid, 5x5x24) | 28x28x24 |
+|Max Pooling (valid, 2x2)    | 14x14x24 |
+|Activation  (ReLU)          | 14x14x24 |
+|Convolution (valid, 5x5x64) | 10x10x64 |
+|Max Pooling (valid, 2x2)    | 5x5x64   |
+|Activation  (ReLU)          | 5x5x64   |
+|Flatten                     | 1600     |
+|Dense                       | 480      |
+|Activation  (ReLU)          | 480      |
+|Dense                       | 168      |
+|Activation  (ReLU)          | 168      |
+|Dense                       | 43       |
+|Activation  (Softmax)       | 43       |
 
 Creating a Great Writeup
 ---
