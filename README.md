@@ -8,9 +8,7 @@ The goals / steps of this project are the following:
 * Analyze the softmax probabilities of the new images
 * Summarize the results with a written report
 
-# Data Set Summary & Exploration
-1. Provide a basic summary of the data set.
-I used the numpy library to calculate summary statistics of the traffic signs data set:
+## Data Set Summary & Exploration
 
 * The size of training set : 34799
 * The size of the validation set : 4410
