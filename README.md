@@ -21,7 +21,7 @@ Used Traffic sign images : [German Traffic Sign Dataset](http://benchmark.ini.ru
 * The shape of a traffic sign image : (32, 32, 3)
 * The number of unique classes/labels in the data set : 43
 <img src="./examples/histgram.png"><br/>
-  
+<img src="./examples/examples.png"><br/>  
 #### Notes on data samples
 There is uneven data in the following
 1. Number of data samples (see histogram)
@@ -29,11 +29,12 @@ There is uneven data in the following
 3. Image brightness, saturation and contrast
 
 Measures  
-1.2. Create padding data (change original image and add)  
-  * Resize (zoom up & down)
-  * Center position shift
-  * rotation
-  * Perspective transform
+1. Create padding data (add 2 below)
+2. Change the original image
+* Resizing
+* Center position shift
+* Rotation
+* perspective transform
 3. Regularization & gray scaling
 
 ## Project: Build a Traffic Sign Recognition Program
