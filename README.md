@@ -117,3 +117,9 @@ Prediction of 30. "Beware of ice / snow"  were off.
 The No1 prediction is a similar triangular 23.Slippery road.  
 As expected, it was possible to discriminate up to the outer triangle, but it seems that the picture inside was wrong.  
 Strangely, the meaning of the sign is similar (in the sense of snow and freezing), but this result seems to be completely unrelated.
+
+## 3-4 Conclusion
+The Traffic Sign Recognition Classifier using lenet model is very effective.  
+However, like us human beings, we do not recognize the meaning from symbols and colors and distinguish them based on them.  
+Therefore, it was found that the accuracy of the classefer decreases when the image is rough in the training model. (so, we humans can predict the type of sign to some extent from the road environment)  
+In order to prevent this, it is necessary to increase the number of images with better resolution, or to improve the model to associate meaning with colors and symbols.  
