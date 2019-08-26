@@ -95,5 +95,18 @@ Cleared all target accuracy rates of 0.93
 - Validation Accuracy by valid data = 0.951
 - Validation Accuracy by test data = 0.952
 # 3. Test a Model on New Images
-The model was verified by preparing a new 10 image that has never been tested. Using 10 images found arbitrarily from the web.
+The model was verified by preparing a new 10 image that has never been tested.
+Using 10 images found arbitrarily from the web.
 <img src="./examples/Original_test.png"><br/>
+
+- 27,30,28 Triangle shape
+Check if the picture inside the triangular sign can be recognized correctly.
+Especially in 30 and 28, it is difficult to discriminate if the resolution is rough, so it may not be recognized correctly by the training model.  
+
+| label No. | External shape| Description                                                 |
+|:------------:|:-------------:|:-----------------------------------------------------------:|
+| 27,30,28     | triangle      | Check if the picture inside the triangular sign can be recognized correctly.  Especially in 30 and 28, it is difficult to discriminate if the resolution is rough, so it may not be recognized correctly by the training model.|
+| `sigma`      | 0.1    | For initilazing Weights with normal distribution            |
+| `learning_rate` | 0.001* | For training neural network (change to 0.0005 on try model) |
+| `BATCH_SIZE`    | 256    | Number of images feeding to the model at one time           |
+| `epoch`         | 20*    | Number of times for training (change to 10 on try model)    |
