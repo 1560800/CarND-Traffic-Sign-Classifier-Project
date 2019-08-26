@@ -109,8 +109,11 @@ Reasons for selecting signs:
 ## 3-2 Prediction result
 This is captured images in my output result in jupyter notebook
 <img src="./examples/result.png"><br/>
+Only the label No. "30" was missed.  
+Details are explained below.  
 ## 3-3 Top5 predinction results
 <img src="./examples/predict.png"><br/>
 Prediction of 30. "Beware of ice / snow"  were off.
-The No1 prediction is a similar triangular 23.Slippery road.
-As expected, it was possible to discriminate up to the outer triangle, but it seems that the picture inside was wrong. Strangely, the meaning of the sign is similar (in the sense of snow and freezing), but this result seems to be completely unrelated.
+The No1 prediction is a similar triangular 23.Slippery road.  
+As expected, it was possible to discriminate up to the outer triangle, but it seems that the picture inside was wrong.  
+Strangely, the meaning of the sign is similar (in the sense of snow and freezing), but this result seems to be completely unrelated.
