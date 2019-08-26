@@ -107,4 +107,4 @@ Especially in 30 and 28, it is difficult to discriminate if the resolution is ro
 |:------------:|:-------------:|:-----------------------------------------------------------:|
 | 27, 30, 28   | triangle      | To check if the picture inside the triangular shape can be recognized correctly. Especially in No.30 and No.28, it is difficult to discriminate if the resolution is rough, so it may not be recognized correctly by the training model.|
 | 5, 7, 1,     | circle, Number  | To check if the picture inside the circle shape can be recognized correctly. Especially in No.5 "30" and No.1 "80", it is difficult to discriminate if the resolution is rough, so it may not be recognized correctly by the training model.|
-| 12, 9, 35, 14 | To make sure that the outline, symbols, and colors are recognized correctly or that they are versatile.|
+| 12, 9, 35, 14 | polygon, symbol, color | To make sure that the outline, symbols, and colors are recognized correctly or that they are versatile.|
