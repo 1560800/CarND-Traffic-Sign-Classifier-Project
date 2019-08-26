@@ -13,7 +13,7 @@ Please refer to this file for the file described in this document
 jpynb:[(./Traffic_Sign_Classifier.ipynb)](./Traffic_Sign_Classifier.ipynb) 
 html:[(./Traffic_Sign_Classifier.html)](./Traffic_Sign_Classifier.html) 
 
-# 1.Data Set Summary & Exploration
+# 1. Data Set Summary & Exploration
 Used Traffic sign images : [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset)
 * The size of training set : 34799
 * The size of the validation set : 4410
@@ -30,7 +30,7 @@ There is uneven data in the following
 2. Size, center position, angle(the sign rotates), view angle(view is not front)
 3. Image brightness, saturation and contrast
 
-# 2.Design and Test a Model Architecture
+# 2. Design and Test a Model Architecture
 ## 2-1 Preprocessing
 #### Counter Measures the above "Notes on data samples"
 I did the following image processing to take measures against the above three items.
@@ -78,20 +78,22 @@ Hyperparameters are:
 | `BATCH_SIZE`    | 256    | Number of images feeding to the model at one time           |
 | `epoch`         | 20*    | Number of times for training (change to 10 on try model)    |
 ## 2-4 Solution Approach
-### 1. Change parameter all filters in the convolutional layers and neurons in the dense layers
+### 2-4-1. Change parameter all filters in the convolutional layers and neurons in the dense layers
 <img src="./examples/conv_try.png"><br/>
 I adopted the quadruple model because the accuracy rate increases as the number of parameters increases.  
-### 2. Change learning rate
+### 2-4-2. Change learning rate
 <img src="./examples/rate_try.png"><br/>
 "0.001" model is the most stable.
-### 3. Change epoch
+### 2-4-3. Change epoch
 <img src="./examples/epoch_try.png"><br/>
-The epoch 10 model seems to be more stable, but if you look at the graph of the epoch 20 model, you can see that the epoch 7th, 12th, and 18th are going up and down.
-I finally adopted the Epoch 20 model because it seems that the learning rate will eventually converge to 0.95.
-In this case, however, the learning rate is stable around 0.95, so I think there is no problem with Epoch 10.
-### 4.Result 
+The epoch 10 model seems to be more stable, but if you look at the graph of the epoch 20 model, you can see that the epoch 7th, 12th, and 18th are going up and down.  
+I finally adopted the Epoch 20 model because it seems that the learning rate will eventually converge to 0.95.  
+In this case, however, the learning rate is stable around 0.95, so I think there is no problem with Epoch 10.   
+### 2-4-4.Result 
 Cleared all target accuracy rates of 0.93
 - Validation Accuracy by train data = 0.996
 - Validation Accuracy by valid data = 0.951
 - Validation Accuracy by test data = 0.952
-# Test a Model on New Images
+# 3. Test a Model on New Images
+The model was verified by preparing a new 10 image that has never been tested. Using 10 images found arbitrarily from the web.
+<img src="./examples/Original_test.png"><br/>
