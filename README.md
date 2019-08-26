@@ -105,8 +105,8 @@ Especially in 30 and 28, it is difficult to discriminate if the resolution is ro
 
 | label No. | External shape| Description                                                 |
 |:------------:|:-------------:|:-----------------------------------------------------------:|
-| 27,30,28     | triangle      | Check if the picture inside the triangular sign can be recognized correctly.  Especially in 30 and 28, it is difficult to discriminate if the resolution is rough, so it may not be recognized correctly by the training model.|
-| `sigma`      | 0.1    | For initilazing Weights with normal distribution            |
+| 27, 30, 28     | triangle      | I check if the picture inside the triangular shape can be recognized correctly. Especially in No.30 and No.28, it is difficult to discriminate if the resolution is rough, so it may not be recognized correctly by the training model.|
+| 5, 7, 1,    | circle, Number  | I check if the picture inside the circle shape can be recognized correctly. Especially in No.5 "30" and No.1 "80", it is difficult to discriminate if the resolution is rough, so it may not be recognized correctly by the training model.|
 | `learning_rate` | 0.001* | For training neural network (change to 0.0005 on try model) |
 | `BATCH_SIZE`    | 256    | Number of images feeding to the model at one time           |
 | `epoch`         | 20*    | Number of times for training (change to 10 on try model)    |
