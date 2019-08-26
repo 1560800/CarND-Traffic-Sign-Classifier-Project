@@ -10,8 +10,8 @@ The goals / steps of this project are the following:
 
 ### First of All
 Please refer to this file for the file described in this document  
-jpynb:[(./Traffic_Sign_Classifier_190825-latest.ipynb)](./Traffic_Sign_Classifier_190825-latest.ipynb) 
-html:[(./Traffic_Sign_Classifier_190825-latest.html)](./Traffic_Sign_Classifier_190825-latest.html) 
+jpynb:[(./Traffic_Sign_Classifier.ipynb)](./Traffic_Sign_Classifier.ipynb) 
+html:[(./Traffic_Sign_Classifier.html)](./Traffic_Sign_Classifier.html) 
 
 # Data Set Summary & Exploration
 Used Traffic sign images : [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset)
@@ -78,14 +78,17 @@ Hyperparameters are:
 | `BATCH_SIZE`    | 256    | Number of images feeding to the model at one time           |
 
 ## Solution Approach
-1 Change parametor all filters in the convolutional layers and neurons in the dense layers
+### 1. Change parameter all filters in the convolutional layers and neurons in the dense layers
 <img src="./examples/conv_try.png"><br/>
+I adopted the quadruple model because the accuracy rate increases as the number of parameters increases.
 
-
-2 Change learning rate
+### 2. Change learning rate
 <img src="./examples/rate_try.png"><br/>
+"0.001" model is the most stable.
 
-
-3 Change epoch
+### 3. Change epoch
 <img src="./examples/epoch_try.png"><br/>
+The epoch 10 model seems to be more stable, but if you look at the graph of the epoch 20 model, you can see that the epoch 7th, 12th, and 18th are going up and down.
+I finally adopted the Epoch 20 model because it seems that the learning rate will eventually converge to 0.95.
+In this case, however, the learning rate is stable around 0.95, so I think there is no problem with Epoch 10.
 
