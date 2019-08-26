@@ -107,7 +107,10 @@ Reasons for selecting signs:
 | 5, 7, 1,     | circle, Number  | To check if the picture inside the circle shape can be recognized correctly. Especially in No.5 "30" and No.1 "80", it is difficult to discriminate if the resolution is rough, so it may not be recognized correctly by the training model.|
 | 12, 9, 35, 14 | polygon, symbol, color | To make sure that the outline, symbols, and colors are recognized correctly or that they are versatile.|
 ## 3-2 Prediction result
+This is captured images in my output result in jupyter notebook
 <img src="./examples/result.png"><br/>
 ## 3-3 Top5 predinction results
-
 <img src="./examples/predict.png"><br/>
+Prediction of 30. "Beware of ice / snow"  were off.
+The No1 prediction is a similar triangular 23.Slippery road.
+As expected, it was possible to discriminate up to the outer triangle, but it seems that the picture inside was wrong. Strangely, the meaning of the sign is similar (in the sense of snow and freezing), but this result seems to be completely unrelated.
