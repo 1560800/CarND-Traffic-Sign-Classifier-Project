@@ -98,13 +98,13 @@ Cleared all target accuracy rates of 0.93
 The model was verified by preparing a new 10 image that has never been tested.
 Using 10 images found arbitrarily from the web.
 <img src="./examples/Original_test.png"><br/>
-
-- 27,30,28 Triangle shape
-Check if the picture inside the triangular sign can be recognized correctly.
-Especially in 30 and 28, it is difficult to discriminate if the resolution is rough, so it may not be recognized correctly by the training model.  
+Reasons for selecting signs
 
 | label No.    | External shape| Description                                                 |
 |:------------:|:-------------:|:-----------------------------------------------------------:|
 | 27, 30, 28   | triangle      | To check if the picture inside the triangular shape can be recognized correctly. Especially in No.30 and No.28, it is difficult to discriminate if the resolution is rough, so it may not be recognized correctly by the training model.|
 | 5, 7, 1,     | circle, Number  | To check if the picture inside the circle shape can be recognized correctly. Especially in No.5 "30" and No.1 "80", it is difficult to discriminate if the resolution is rough, so it may not be recognized correctly by the training model.|
 | 12, 9, 35, 14 | polygon, symbol, color | To make sure that the outline, symbols, and colors are recognized correctly or that they are versatile.|
+
+Top5 predinction results
+<img src="./examples/predict.png"><br/>
