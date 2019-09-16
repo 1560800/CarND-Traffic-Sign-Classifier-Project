@@ -1,4 +1,9 @@
 # Traffic Sign Classification
+## Top5 predinction results
+This is the result of machine learning created in this project.  
+Judgment was made with a 90% accuracy rate for the new signs.
+<img src="./examples/predict.png"><br/>
+
 Build a Traffic Sign Recognition Project
 The goals / steps of this project are the following:
 * Load the data set (see below for links to the project data set)
